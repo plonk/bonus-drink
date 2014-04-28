@@ -3,9 +3,9 @@ class BonusDrink
     if amount == 0
       0
     elsif amount.even?
-      (amount - 1) / 2 * 3 + 2
+      (amount / 2 - 1) * 3 + 2
     elsif amount.odd?
-      amount / 2 * 3 + 1
+      (amount - 1) / 2 * 3 + 1
     end
   end
 end
